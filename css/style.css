@@ -177,3 +177,108 @@ nav .img {
   
       }
     }
+
+    /* Projects section style */
+    
+    .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14vh 0  ;
+      }
+      .card-header{
+        width: 40%;
+      }
+      #projects{
+        padding:  10px 4rem ;
+      }
+
+      @media (max-width:768px){
+        .section{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5rem;
+          padding: 5vh 0;
+        }
+        #projects{
+          padding:  0 10px ;
+        }
+        .project{
+          width: 100% !important;
+        }
+        .project-img {
+          width: 100% !important;
+        }
+        .card-header {
+          text-align: center;
+          width: 100%;
+          
+        }
+        .title {
+          margin: 0;
+          color: rgba(0, 0, 0, 0.9);
+          font-weight: 400;
+        }
+        
+        .description {
+          margin-top: 12px;
+          font-size: 1.3rem !important;
+            color: #666;
+            width: 100% !important;
+            line-height: 1px;
+            margin-bottom: 3rem;
+        }
+        .project-button a{
+          padding: .5rem 2rem;
+          font-size: 1rem;
+        
+        }
+      }
+      
+     
+      
+      .title {
+        margin: 0;
+        color: rgba(0, 0, 0, 0.9);
+        font-weight: 600;
+      }
+      
+      .description {
+        margin-top: 12px;
+        font-size: 1.8rem;
+          color: #666;
+          width: 100%;
+          line-height: 1.7;
+          margin-bottom: 3rem;
+      }
+      .project-button a{
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+      
+      }
+      .project{
+        width: 50% ;
+      
+      }
+      
+      .project-img {
+        width: 70%;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 18px 18px 25px 1px rgba(58, 41, 15, 0.3);
+        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .project-img:hover {
+        transform: translate3d(0px, -10px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      }
+      @media (min-width: 1200px) {
+        .project-img {
+          width: 950px;
+        }
+      }
+      @media (min-width: 769px) {
+        .project-img {
+          width: 550px;
+        }
+      }
